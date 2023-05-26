@@ -270,9 +270,28 @@
 }
 
 .checkbox{
+    display: none;
+}
+
+.actual-checkbox{
     width: 22px;
     height: 22px;
     flex-shrink: 0;
+    padding: 4.5px 5px 5.5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.checkbox-arrow{
+    display: none;
+}
+
+.actual-checkbox.checked .checkbox-arrow{
+    display: block;
+}
+
+.actual-checkbox.checked{
+    border: 1px solid #1D1D1D;
 }
 
 .amount-number{

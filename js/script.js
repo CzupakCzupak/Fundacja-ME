@@ -204,3 +204,10 @@ const currentYear = new Date().getFullYear();
 const yearEl = document.querySelector(".year");
 
 yearEl.textContent = currentYear;
+
+const allChecks = document.querySelectorAll('.actual-checkbox')
+allChecks.forEach(item =>{
+    item.addEventListener('click',()=>{
+
+    })
+});
