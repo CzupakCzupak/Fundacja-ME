@@ -5,6 +5,10 @@
     background-color: #fff;
     box-shadow: 0 1px 16px rgba(0,0,0,0.3);
     height: 124px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .main-nav{
@@ -52,4 +56,230 @@
 
 .directory a{
     color: #555;
+}
+
+.fundraiser-container{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    max-width: 771px;
+    width: 100%;
+    flex: 1 1 771px;
+}
+
+.fundraiser-desc{
+    font-family: "Montserrat";
+    padding: 32px;
+
+}
+
+.photos-grid{
+    max-width: 707px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 32px;
+}
+
+.main-img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.photo{
+    border-radius: 8px;
+}
+
+.donation-container{
+    font-family: "Poppins";
+    padding: 32px;
+    max-width: 557px;
+    width: 100%;
+    flex: 1 1 557px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.form-box{
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 16px;
+}
+
+.money-left{
+    color: rgba(29, 29, 29, 0.7);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.earned{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.goal-line{
+    background: #DDDDDD;
+    border: unset;
+    border-radius: 12px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.goal-line::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    background-color: #1D1D1D;
+    width: 65%;
+}
+
+.overall-money,.percentage{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.form-submit{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #1D1D1D;
+    padding: 20px 0;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.amount-types{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid #1d1d1d;
+    border-radius: 8px;
+}
+
+.amount{
+    padding:20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.amount.active{
+    background-color: #1D1D1D;
+    color: #fff;
+}
+
+.amount:not(:last-child){
+    border-right: 2px solid #1d1d1d;
+}
+
+.form-label{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1d1d1d;
+}
+
+.form-label span{
+    color: #00000099;
+}
+
+.text-input{
+    padding: 9px 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Montserrat";
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.text-input:disabled{
+    background-color: #F6F6F6;
+}
+
+.rgba-gray{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.max-w-400{
+    max-width: 400px;
+}
+
+.gap-13.max-w-400{
+    padding: 6px 0;
+    margin-bottom: 22px;
+}
+
+.checkbox{
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* Footer */
+
+.footer{
+    padding:64px 0 32px;
+    font-family: "Montserrat";
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: start;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(29, 29, 29, 0.25);
+}
+
+.footer-col-473{
+    max-width: 473px;
+    width: 100%;
+}
+
+.footer-text{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #1d1d1d;
+}
+
+.footer-col-580{
+    display: flex;
+    max-width: 580px;
+    width: 100%;
+}
+
+.max-w-271{
+    max-width: 271px;
+    width: 100%;
+}
+
+.footer-list{
+    margin-left:9.5px;
+    gap: 16px;
+}
+
+.footer-list li{
+    display: block;
+}
+
+.copy{
+    margin-top: 32px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    text-align: center;
 }

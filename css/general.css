@@ -61,6 +61,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.font-pop{
+    font-family: 'Poppins', sans-serif;
+}
+
 .container{
     max-width: 136rem;
     width: 100%;
@@ -68,16 +72,24 @@ body {
     /* position: relative; */
 }
 
-.heading--primary{
-    font-size: 6.0rem;
-    line-height: 107%;
-    max-width: 74.2rem;
+.heading-primary{
+    font-size: 32px;
+    line-height: 52px;
+    color: #1D1D1D;
 }
 
 .heading-secondary{
-    font-size:4.0rem;
-    line-height: 110%;
-    
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.heading-tertiary{
+    font-size:20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
 }
 
 a{
@@ -114,6 +126,10 @@ button{
 
 .fw-700{
     font-weight: 700;
+}
+
+.fw-600{
+    font-weight: 600;
 }
 
 .fw-500{
@@ -180,6 +196,9 @@ button{
     margin-bottom: 4rem;
 }
 
+.mb-14{
+    margin-bottom: 1.4rem;
+}
 .mb-104{
     margin-bottom: 10.4rem;
 }
@@ -216,12 +235,16 @@ button{
     color: #555;
 }
 
+.gray-3{
+    color: #333;
+}
+
 .transparent-white{
     color: rgba(255,255,255,0.6);
 }
 
 .black{
-    color:#000
+    color:#1D1D1D;
 }
 
 .new-black{
@@ -275,8 +298,16 @@ button{
     flex-direction: column;
 }
 
+.gap-8{
+    gap: 8px;
+}
+
 .gap-12{
     gap: 1.2rem;
+}
+
+.gap-13{
+    gap: 1.3rem;
 }
 
 .gap-16{
@@ -323,6 +354,14 @@ button{
     font-size: 16px;
 }
 
+.fs-17{
+    font-size: 17px;
+}
+
+.fs-18{
+    font-size: 18px
+}
+
 .fs-15{
     font-size: 15px;
 }
@@ -333,6 +372,14 @@ button{
 
 .lh-26{
     line-height: 26px;
+}
+
+.lh-22{
+    line-height: 22px;
+}
+
+.lh-27{
+    line-height: 27px;
 }
 
 .lh-30{
@@ -378,4 +425,12 @@ button{
 
 label,input{
     cursor: pointer;
+}
+
+.ta-r{
+    text-align: right;
+}
+
+.underline{
+    text-decoration: underline;
 }
