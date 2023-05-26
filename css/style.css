@@ -5,15 +5,42 @@
     background-color: #fff;
     box-shadow: 0 1px 16px rgba(0,0,0,0.3);
     height: 124px;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
     z-index: 99;
+}
+
+.header .container{
+    height: 100%;
+    flex-shrink: 0;
+}
+
+
+.shadow{
+    display: none;
+}
+
+.shadow.active{
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: 97;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.btns-flex{
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 .main-nav{
     max-width: 1166px;
     width: 100%;    
+    z-index: 98;
 }
 
 .main-nav-list{
@@ -22,7 +49,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 112px;
+    margin-right: 50px;
+}
+
+.close-icon,.open-icon{
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.mini-menu{
+    display: none;
+    gap: 32px;
 }
 
 .logo-img{
@@ -51,6 +89,7 @@
 /* Section Fundraiser */
 
 .section-fundraiser{
+    margin-top: 124px;
     padding: 16px 0 47px;
 }
 
@@ -61,9 +100,10 @@
 .fundraiser-container{
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    max-width: 771px;
+    max-width: 773px;
     width: 100%;
-    flex: 1 1 771px;
+    flex: 1 1 773px;
+    overflow: hidden;
 }
 
 .fundraiser-desc{
@@ -73,21 +113,26 @@
 }
 
 .photos-grid{
-    max-width: 707px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
 .main-img{
     width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+}
+
+
+.photo-width{
+    max-width: 152.75px;
+    height: 168px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .photo{
-    border-radius: 8px;
+    width: 100%;
 }
 
 .donation-container{
@@ -100,7 +145,7 @@
     border-radius: 8px;
 }
 
-.form-box{
+.earned-value{
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     padding-top: 16px;
 }
@@ -127,11 +172,11 @@
     margin-bottom: 16px;
 }
 
-.goal-line::before{
-    content: "";
+.actual-line{
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 8px;
     height: 8px;
     background-color: #1D1D1D;
     width: 65%;
@@ -172,6 +217,10 @@
     line-height: 20px;
 }
 
+.amount:hover{
+    cursor: pointer;
+}
+
 .amount.active{
     background-color: #1D1D1D;
     color: #fff;
@@ -186,6 +235,7 @@
     font-size: 20px;
     line-height: 30px;
     color: #1d1d1d;
+    display: block;
 }
 
 .form-label span{
@@ -225,11 +275,65 @@
     flex-shrink: 0;
 }
 
+.amount-number{
+    font-family: "Montserrat", sans-serif;
+    padding: 9px 16px;
+    border-radius: 8px;
+    color:#1d1d1d;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    width:100%;
+}
+
+.amount-number::placeholder{
+    color: rgba(29, 29, 29, 0.4);
+}
+
+.number-input{
+    position: relative;
+    width: 25%;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.currency-placeholder{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+.amount-number::-webkit-inner-spin-button, 
+.amount-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.invalid-feedback {
+    color: #a70000;
+    padding: 7px 7px 0;
+    width: 100%;
+    display: none;
+    font-size: 12px;
+}
+
+.red-border{
+    border-color: #a70000;
+}
+
+.invalid-feedback.active{
+    display: block;
+}
+
 /* Footer */
 
 .footer{
     padding:64px 0 32px;
     font-family: "Montserrat";
+    border-top: 1px solid rgba(29, 29, 29, 0.25);
+    position: relative;
 }
 
 .footer-container{

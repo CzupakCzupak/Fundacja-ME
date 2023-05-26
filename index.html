@@ -9,9 +9,9 @@
     <!-- JS -->
     <script src="js/script.js" defer></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/queries.css">
     <!-- Fonts -->
         <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,66 +23,94 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header d-f ai-c">
-        <div class="container">
-            <div class="d-f ai-c">
+    <header class="header">
+        <div class="container d-f ai-c pos-rel">
                 <a href="#">
                     <img src="img/logo.png" alt="Logo image" class="logo-img">
                 </a>
-                <nav class="main-nav d-f">
+                <div class="mini-menu ai-c">
+                    <svg width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74511 0.547105C-1.65693 3.54901 -2.39174 15.0257 5.56821 18.9328C8.30381 20.2756 11.6845 20.2645 14.4562 18.9043L16.4171 17.9419L19.5191 21.0298C22.6456 24.1415 23.7207 24.6748 23.995 23.25C24.0777 22.8205 23.1453 21.6501 21.0266 19.523L17.9373 16.4223L18.9002 14.4622C20.1404 11.9371 20.2462 8.34662 19.1511 5.95669C16.9878 1.23774 11.5046 -1.15354 6.74511 0.547105ZM12.4561 2.36358C15.3344 3.21356 18.0211 6.89606 18.0211 9.99102C18.0211 14.1392 14.133 18.0256 9.98308 18.0256C6.88678 18.0256 3.2027 15.34 2.35235 12.463C1.42497 9.32516 2.07872 6.82341 4.44557 4.45222C6.79501 2.09877 9.32564 1.43894 12.4561 2.36358Z" fill="black"/>
+                        </svg>
+                        
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="#1d1d1d" xmlns="http://www.w3.org/2000/svg" class="open-icon">
+                        <path d="M0 0H20V2H0V0Z" fill="#1d1d1d"/>
+                        <path d="M0 7H20V9H0V7Z" fill="#1d1d1d"/>
+                        <path d="M0 14H20V16H0V14Z" fill="#1d1d1d"/>
+                    </svg>    
+                </div>
+                <div class="shadow"></div>
+                <nav class="main-nav d-f jc-b">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-icon">
+                        <path d="M1.46402 0.0505371L0.0498047 1.46475L3.58542 5.00036L0.049814 8.53597L1.46403 9.95018L4.99963 6.41458L8.53509 9.95003L9.9493 8.53582L6.41385 5.00036L9.94931 1.4649L8.5351 0.050688L4.99963 3.58615L1.46402 0.0505371Z" fill="#1d1d1d"/>
+                    </svg>                        
                     <ul class="main-nav-list">
-                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">O fundacji</a></li>
-                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Zbiórki online</a></li>
+                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">O&nbsp;fundacji</a></li>
+                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Zbiórki&nbsp;online</a></li>
                         <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Aktualności</a></li>
-                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Włącz się</a></li>
-                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Przekaż 1%</a></li>
+                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Włącz&nbsp;się</a></li>
+                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Przekaż&nbsp;1%</a></li>
                         <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30">Kontakt</a></li>
-                        <li><a href="#" class="main-nav-link fw-400 fs-16 lh-30"><img src="img/Search.svg" alt=""></a></li>
+                        <li class="search"><a href="#" class="main-nav-link fw-400 fs-16 lh-30"><img src="img/Search.svg" alt=""></a></li>
                     </ul>
-                    <div class="d-f gap-16 ai-c">
+                    <div class="btns-flex">
                         <a href="#" class="btn btn-black">Wspieram</a>
-                        <a href="#" class="btn btn-white-outline">Szukam wsparcia</a>
+                        <a href="#" class="btn btn-white-outline">Szukam&nbsp;wsparcia</a>
                     </div>
                 </nav>
-            </div>
         </div>
     </header>
     <main>
         <section class="section-fundraiser">
             <div class="container">
                 <p class="directory gray-5 lh-26 fs-15 fw-400 mb-32"><a href="#">Strona główna </a>› Ratujemy Daniela przed amputacją!</p>
-                <div class="d-f ai-fs gap-32">
+                <div class="d-f ai-fs gap-32 flexy">
                     <div class="fundraiser-container">
                         <img src="img/771x352.svg" alt="Placeholder image" class="main-img">
                         <div class="fundraiser-desc">
                             <h1 class="heading-primary fw-700 font-mont mb-32">Ratujemy Daniela przed amputacją!</h1>
                             <p class="fw-700 fs-20 lh-30 black mb-8">Daniel Wrona</p>
-                            <p class="fs-17 fw-400 lh-27 gray-5 mb-8">Miejsce: <span class="black fw-700 fs-20 lh-30">Kraków</span></p>
-                            <p class="fs-17 fw-400 lh-27 gray-5">Zbiórka od: <span class="black fw-700 fs-20 lh-30">01.01.2021 </span>do: <span class="black fw-700 fs-20 lh-30">14.02.2022</span></p>
-                            <p class="gray-3 fs-18 fw-400 lh-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus at vulputate ornare. Lorem ipsum dolor sanctus el viloris con est kalibus. Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus kalarepus. </p>
-                            <p class="fw-400 fs-18 lh-30 mb-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem.<span class="fw-700">Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. </span>Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus at vulputate ornare. Lorem ipsum dolor sanctus el viloris con est kalibus. Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus kalarepus.
+                            <p class="fs-17 fw-400 lh-27 gray-5 mb-8 dates">Miejsce: <span class="black fw-700 fs-20 lh-30">Kraków</span></p>
+                            <p class="fs-17 fw-400 lh-27 gray-5 dates">Zbiórka od: <span class="black fw-700 fs-20 lh-30">01.01.2021 </span>do: <span class="black fw-700 fs-20 lh-30">14.02.2022</span></p>
+                            <p class="gray-3 fs-18 fw-400 lh-30 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus at vulputate ornare. Lorem ipsum dolor sanctus el viloris con est kalibus. Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus kalarepus. </p>
+                            <p class="fw-400 fs-18 lh-30 mb-32 description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem.<span class="fw-700">Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. </span>Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus at vulputate ornare. Lorem ipsum dolor sanctus el viloris con est kalibus. Pellentesque gravida metus at vulputate ornare. Sit amet, consectetur adipiscing elit. Vivamus sed tortor in quam porttitor congue ac quis lorem. Pellentesque gravida metus kalarepus.
                             </p>
                             <div class="photos-grid">
-                                <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
-                                <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
-                                <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
-                                <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
-                                <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
-                                <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                <div class="photo-width">
+                                    <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                </div>
+                                <div class="photo-width">
+                                    <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                </div>
+                                <div class="photo-width">
+                                    <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                </div>
+                                <div class="photo-width">
+                                    <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                </div>
+                                <div class="photo-width">
+                                    <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                </div>
+                                <div class="photo-width">
+                                    <img src="img/153x168.svg" alt="Placeholder photo" class="photo">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="donation-container">
                         <h3 class="heading-tertiary mb-16">Ratujemy Daniela przed amputacją!</h3>
-                        <form action="#" class="form-box">
-                            <p class="fw-500 fs-17 lh-27 ta-r mb-8 font-mont">Zebrano: <span class="earned">6580 zł</span>
-                            </p>
-                            <p class="fw-500 fs-17 lh-27 ta-r mb-16">Potrzeba jeszcze: <span class="money-left">3420 zł</span></p>
-                            <hr class="goal-line">
+                        <div class="earned-value">
+                            <p class="fw-500 fs-17 lh-27 ta-r mb-8 font-mont">Zebrano: <span class="earned">6580 zł</span></p>
+                            <p class="fw-500 fs-17 lh-27 ta-r mb-16 needed">Potrzeba jeszcze: <span class="money-left">3420 zł</span></p>
+                            <div class="goal-line">
+                                <div class="actual-line"></div>
+                            </div>
                             <div class="d-f jc-b mb-16">
                                 <p class="percentage">65%</p>
                                 <p class="fs-15 fw-500 lh-22">Cel: <span class="overall-money">10000 zł</span></p>
                             </div>
+                        </div>
+                        <form action="#" class="form-box">
                             <div class="d-f ai-c gap-8 mb-16">
                                 <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11 11.1396C13.7614 11.1396 16 8.90107 16 6.13965C16 3.37822 13.7614 1.13965 11 1.13965C8.23858 1.13965 6 3.37822 6 6.13965C6 8.90107 8.23858 11.1396 11 11.1396ZM11 11.1396C5.47715 11.1396 1 16.6168 1 22.1396M11 11.1396C16.5228 11.1396 21 16.6168 21 22.1396" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -93,15 +121,21 @@
                                 <div class="amount" data-price="25">25 zł</div>
                                 <div class="amount" data-price="50">50 zł</div>
                                 <div class="amount" data-price="100">100 zł</div>
-                                <div class="amount active">Inna kwota</div>
+                                <div class="amount active">Inna&nbsp;kwota</div>
                             </div>
-                            <div class="d-f fd-c">
-                                <div class="d-f fd-c custom-amount">  
+                                <div class="d-f fd-c jc-s custom-amount mb-24 ai-fs">  
                                     <label for="money" class="form-label mb-16">Podaj kwotę wsparcia*</label>
-                                    <input type="number" name="money" id="money" class="amount-number">
+                                    <label class="number-input">    
+                                        <input type="number" name="money" id="money" class="amount-number" placeholder="____" value="">
+                                        <span class="currency-placeholder">zł</span>
+                                    </label>
+                                    <p class="invalid-feedback amount-feedback">Podaj kwotę wsparcia</p>
                                 </div>
-                                <label for="email" class="form-label mb-16">Adres e-mail*</label>
-                                <input type="email" placeholder="Podaj swój adres e-mail" class="text-input mb-16 max-w-400" id="email">
+                                <div class="mb-16">
+                                    <label for="email" class="form-label mb-16">Adres e-mail*</label>
+                                    <input type="email" placeholder="Podaj swój adres e-mail" class="text-input max-w-400" id="email">
+                                    <p class="invalid-feedback email">Wpisz poprawny adres e-mail.</p>
+                                </div>
                                 <label for="name" class="form-label mb-8">Podpis <span class="">(opcjonalne)</span></label>
                                 <p class="fs-15 fw-400 lh-27 rgba-gray mb-16">Twój podpis będzie widoczny na liście darczyńców. Możesz podać swoje imię i nazwisko lub pseudonim. Możesz również dokonać wpłaty jako anonimowy darczyńca.</p>
                                 <input type="text" name="name" id="name" class="text-input mb-14 max-w-400 surename" placeholder="Np. Imię i nazwisko">
@@ -109,11 +143,13 @@
                                     <input type="checkbox" name="anonymous" id="anonymous" class="checkbox anonymous">
                                     <label for="anonymous" class="fs-17 lh-27 fw-400 black">Anonimowy darczyńca <span class="fs-15 rgba-gray">(Twój podpis zobaczy jedynie organizator zbiórki)</span></label>
                                 </div>
-                                <div class="d-f gap-13 max-w-400 ai-c">
-                                    <input type="checkbox" name="termsofservice" id="termsofservice" class="checkbox">
-                                    <label for="termsofservice" class="fs-17 lh-27 fw-400 black">Zgadzam się z <span class="underline">regulaminem</span><label>
+                                <div class="gap-13 max-w-400">
+                                    <div class="d-f ai-c gap-13">
+                                        <input type="checkbox" name="termsofservice" id="termsofservice" class="checkbox">
+                                        <label for="termsofservice" class="fs-17 lh-27 fw-400 black">Zgadzam się z <span class="underline">regulaminem</span><label>
+                                    </div>
+                                    <span class="invalid-feedback terms">Zgoda jest wymagana</span>
                                 </div>
-                            </div>
                             <input type="button" value="Wpłać" class="form-submit font-pop">
                         </form>
                     </div>
@@ -130,7 +166,7 @@
                     <h3 class="heading-tertiary mb-32">Bądźmy w kontakcie</h3>
                     <div class="d-f ai-c gap-16">
                         <img src="img/heart.svg" alt="Heart image">
-                        <p class="footer-text">Zobacz, co słychać u nas na FB</p>
+                        <p class="footer-text">Zobacz, co słychać u nas na <a href="https://Facebook.com" class="underline">FB</a></p>
                     </div>
                     <div class="d-f ai-c gap-16">
                         <img src="img/letter.svg" alt="Letter image">

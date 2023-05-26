@@ -66,10 +66,14 @@ body {
 }
 
 .container{
-    max-width: 136rem;
+    max-width: 1364px;
     width: 100%;
     margin: 0 auto;
     /* position: relative; */
+}
+
+.pos-rel{
+    position: relative;
 }
 
 .heading-primary{
@@ -284,6 +288,10 @@ button{
 
 .jc-e{
     justify-content: flex-end;
+}
+
+.jc-s{
+    justify-content: flex-start;
 }
 
 .jc-c{
