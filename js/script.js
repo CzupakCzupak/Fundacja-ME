@@ -5,7 +5,7 @@ const moneyLeft = document.querySelector('.money-left')
 const peopleDonated = document.querySelector('.people-donated')
 const amounts = document.querySelectorAll('.amount')
 const number = document.querySelector('.amount-number')
-const anonymous = document.querySelector('.anonymous')
+const anonymous = document.querySelector('.actual-checkbox.anonymous')
 const nameSurename = document.querySelector('.surename')
 const customAmount = document.querySelector('.custom-amount')
 const overallMoney = document.querySelector('.overall-money')
@@ -16,11 +16,11 @@ const invalidEmail = document.querySelector('.invalid-feedback.email')
 const invalidAmount = document.querySelector('.invalid-feedback.amount-feedback')
 const termsofservice = document.querySelector('#termsofservice')
 const invalidTerms = document.querySelector('.terms')
-anonymous.addEventListener('change', ()=>{
-    if(anonymous.checked){
-        nameSurename.disabled = true;
-    }else{
+anonymous.addEventListener('click', ()=>{
+    if(anonymous.classList.contains('checked')){
         nameSurename.disabled = false;
+    }else{
+        nameSurename.disabled = true;
     }
 })
 
@@ -157,57 +157,19 @@ let slideDown = (target, duration = 300) => {
     }, duration);
 };
 
-const mainNav = document.querySelector('.main-nav')
-const close = document.querySelector(".close-icon")
-const open = document.querySelector(".open-icon")
-const shadow = document.querySelector('.shadow')
-
-close.addEventListener('click',toggleNav)
-open.addEventListener('click',toggleNav)
-
-function toggleNav(){
-    mainNav.classList.toggle('active')
-    shadow.classList.toggle('active')
-}
-
-shadow.addEventListener('click', ()=> {
-    mainNav.classList.remove("active");
-    shadow.classList.remove('active')
-})
-
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    // scrool to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(`${href}`);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-
-    // close mobile nav
-    if (mainNav.classList.contains("active")) {
-      mainNav.classList.remove("active");
-      shadow.classList.remove('active')
-    }
-  });
-});
-
-const currentYear = new Date().getFullYear();
-const yearEl = document.querySelector(".year");
-
-yearEl.textContent = currentYear;
-
 const allChecks = document.querySelectorAll('.actual-checkbox')
 allChecks.forEach(item =>{
-    item.addEventListener('click',()=>{
+    item.addEventListener('click',(e)=>{
+        const ParentEl = e.target.closest('.gap-13')
+        const currentCheck = ParentEl.querySelector('.actual-checkbox')
+        const checkbox = ParentEl.querySelector('input[type=checkbox]')
+        currentCheck.classList.toggle('checked')
+        if(currentCheck.classList.contains('checked')){
+            checkbox.checked = true
+        }else{
+            checkbox.checked = false
+        }
 
+        console.log(checkbox.checked);
     })
 });

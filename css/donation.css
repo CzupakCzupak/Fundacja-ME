@@ -1,0 +1,338 @@
+/* Section Fundraiser */
+
+.section-fundraiser{
+    margin-top: 124px;
+    padding: 16px 0 47px;
+}
+
+.directory a{
+    color: #555;
+}
+
+.fundraiser-container{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    max-width: 773px;
+    width: 100%;
+    flex: 1 1 773px;
+    overflow: hidden;
+}
+
+.fundraiser-desc{
+    font-family: "Montserrat";
+    padding: 32px;
+
+}
+
+.photos-grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.main-img{
+    width: 100%;
+}
+
+
+.photo-width{
+    max-width: 152.75px;
+    height: 168px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.photo{
+    width: 100%;
+}
+
+.donation-container{
+    font-family: "Poppins";
+    padding: 32px;
+    max-width: 557px;
+    width: 100%;
+    flex: 1 1 557px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.earned-value{
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    padding-top: 16px;
+}
+
+.money-left{
+    color: rgba(29, 29, 29, 0.7);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.earned{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.goal-line{
+    background: #DDDDDD;
+    border: unset;
+    border-radius: 12px;
+    width: 100%;
+    height: 8px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.actual-line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    height: 8px;
+    background-color: #1D1D1D;
+    width: 65%;
+}
+
+.overall-money,.percentage{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.form-submit{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #1D1D1D;
+    padding: 20px 0;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.amount-types{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid #1d1d1d;
+    border-radius: 8px;
+}
+
+.amount{
+    padding:20px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.amount:hover{
+    cursor: pointer;
+}
+
+.amount.active{
+    background-color: #1D1D1D;
+    color: #fff;
+}
+
+.amount:not(:last-child){
+    border-right: 2px solid #1d1d1d;
+}
+
+.form-label{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1d1d1d;
+    display: block;
+}
+
+.form-label span{
+    color: #00000099;
+}
+
+.text-input{
+    padding: 9px 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Montserrat";
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.text-input:disabled{
+    background-color: #F6F6F6;
+}
+
+.rgba-gray{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.max-w-400{
+    max-width: 400px;
+}
+
+.gap-13.max-w-400{
+    padding: 6px 0;
+    margin-bottom: 22px;
+}
+
+.checkbox{
+    display: none;
+}
+
+.actual-checkbox{
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    padding: 4.5px 5px 5.5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    display: grid;
+    place-content: center;
+  
+}
+
+.checkbox-arrow{
+    display: none;
+}
+
+.actual-checkbox.checked .checkbox-arrow{
+    display: block;
+}
+
+.actual-checkbox.checked{
+    border: 1px solid #1D1D1D;
+}
+
+.amount-number{
+    font-family: "Montserrat", sans-serif;
+    padding: 9px 16px;
+    border-radius: 8px;
+    color:#1d1d1d;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    width:100%;
+}
+
+.amount-number::placeholder{
+    color: rgba(29, 29, 29, 0.4);
+}
+
+.number-input{
+    position: relative;
+    width: 25%;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.currency-placeholder{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+.amount-number::-webkit-inner-spin-button, 
+.amount-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.invalid-feedback {
+    color: #a70000;
+    padding: 7px 7px 0;
+    width: 100%;
+    display: none;
+    font-size: 12px;
+}
+
+.red-border{
+    border-color: #a70000;
+}
+
+.invalid-feedback.active{
+    display: block;
+}
+
+/* Headings */
+
+.heading-primary{
+    font-size: 32px;
+    line-height: 52px;
+    color: #1D1D1D;
+}
+
+.heading-secondary{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.heading-tertiary{
+    font-size:20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+@media(max-width:1024px){
+    .flexy{
+        flex-direction: column;
+    }
+
+    .fundraiser-container{
+        flex: unset;
+        max-width: 100%;
+    }
+    
+    .donation-container{
+        flex: unset;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:520px){
+
+    .donation-container{
+        padding:16px;
+    }
+
+    .fundraiser-desc{
+        padding:10px
+    }
+
+    .heading-primary{
+        line-height: 40px;
+    }
+
+    .dates{
+        font-size: 14px;
+    }
+
+    .dates span{
+        font-size: 16px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:424px){
+
+    .number-input{
+        width: 50%;
+    }
+
+    .heading-primary{
+        font-size: 25px;
+    }
+}

@@ -1,43 +1,12 @@
-@font-face {
-    font-family: "CUPRA";
-    src: url("../fonts/Cupra-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "CUPRA";
-    src: url("../fonts/Cupra-ExtraLight.woff") format("woff");
-    font-weight: 200;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "CUPRA";
-    src: url("../fonts/Cupra-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-  }
-@font-face {
-    font-family: "CUPRA";
-    src: url("../fonts/Cupra-ExtraBold.woff") format("woff");
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: "CUPRA";
-    src: url("../fonts/Cupra-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: "CUPRA";
-    src: url("../fonts/Cupra-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 *,
 *:before,
 *:after {
+    scroll-behavior: smooth;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -69,31 +38,12 @@ body {
     max-width: 1364px;
     width: 100%;
     margin: 0 auto;
+    height: 100%;
     /* position: relative; */
 }
 
 .pos-rel{
     position: relative;
-}
-
-.heading-primary{
-    font-size: 32px;
-    line-height: 52px;
-    color: #1D1D1D;
-}
-
-.heading-secondary{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-}
-
-.heading-tertiary{
-    font-size:20px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #1d1d1d;
 }
 
 a{
@@ -334,6 +284,10 @@ button{
     gap: 4.8rem;
 }
 
+.gap-64{
+    gap: 6.4rem;
+}
+
 .gap-159{
     gap: 15.9rem;
 }
@@ -423,6 +377,7 @@ button{
 }
 
 .margin-auto{
+    display: block;
     margin: 0 auto;
 }
 
@@ -441,4 +396,8 @@ label,input{
 
 .underline{
     text-decoration: underline;
+}
+
+img{
+    vertical-align: middle;
 }
