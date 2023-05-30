@@ -177,6 +177,10 @@ button{
     margin-bottom: 0.8rem;
 }
 
+.mr-16{
+    margin-right: 16px;
+}
+
 .ml-32{
     margin-left: 3.2rem;
 }
@@ -377,7 +381,7 @@ button{
 }
 
 .margin-auto{
-    display: block;
+    display: blockh;
     margin: 0 auto;
 }
 
